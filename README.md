@@ -1,5 +1,7 @@
 Ryzen Power Monitor, based on rust.
 
+[![Rust](https://github.com/ItsLucas/ryzenmon-rust/actions/workflows/rust.yml/badge.svg)](https://github.com/ItsLucas/ryzenmon-rust/actions/workflows/rust.yml)
+
 # Usage:
 Put the following into /etc/ryzenmon/config.toml: 
 ```
