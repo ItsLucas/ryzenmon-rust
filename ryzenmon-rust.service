@@ -1,0 +1,16 @@
+[Unit]
+Description=Ryzen Monitor Rust Service
+After=network.target
+
+[Service]
+ExecStart=/root/.cargo/bin/ryzenmon-rust
+Restart=always
+User=root
+Group=root
+Environment=RUST_LOG=info
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=ryzenmon-rust
+
+[Install]
+WantedBy=multi-user.target
